@@ -1,7 +1,7 @@
 # IBM Spectrum Protect: Exploiting Legacy Authentication Protocol
 
 ### Intro
-We want to share details of a little-known attack vector that we have successfully exploited in numerous security audits.
+We want to share details of a little-known attack vector that we have successfully exploited during numerous security audits.
 
 IBM Spectrum Protect is a backup solution that provides data protection for virtual, physical and cloud environments. The solution is based on a client-server architecture. IBM Spectrum Protect client nodes, administrative clients, and servers communicate using a proprietary communication protocol. Since version 8.1.2 released in 2017, the communication protocol got a major upgrade where TLS support was added, and a new authentication protocol was introduced. 
 
