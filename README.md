@@ -39,6 +39,6 @@ The implementation of the old authentication protocol is flawed, because an atta
 
 To illustrate the attack three proof-of-concept tools were written. The [tsm_admin_enum.py](tsm_admin_enum.py) tool can be used to identify (using a dictionary attack) administrative accounts that are in a transitional state. The [tsm_auth_leak.py](tsm_auth_leak.py) tool retrieves authentication messages (for the specified user) needed for an offline password cracking attack. The [tsm_auth_crack.py](tsm_auth_crack.py) tool takes authentication messages and a password file as input and tries to find a valid password.
 
-The following figure shows these three tools first identifying an admin account then retrieving authentication messages and finally cracking a password:
+The following figure shows these three tools first identifying an insecure admin account then retrieving authentication messages and finally cracking a password:
 
 ![terminal](https://user-images.githubusercontent.com/79406206/118981965-3b2f3e80-b97b-11eb-917b-c19917be8ef4.png)
