@@ -35,7 +35,7 @@ The authentication protocol is implemented as follows:
 13. A client compares its previously generated token to the received validation token and authenticates the server if the tokens match.
 
 ### Stealth Password Cracking
-The implementation of the old authentication protocol is flawed, because an attacker can repeat the authentication sequence offline. Basically, the attacker tries to decrypt the authentication message (a chosen-ciphertext) described in Step 3 until he gets a session token that was used to encrypt the response message described in Step 8.
+The implementation of the old authentication protocol is flawed, because an attacker can repeat the authentication sequence offline. Basically, the attacker tries to decrypt the authentication message (a chosen-ciphertext) described in Step 3 until the attacker gets a session token that was used to encrypt the response message described in Step 8.
 
 To illustrate the attack three proof-of-concept tools were written. The [tsm_admin_enum.py](tsm_admin_enum.py) tool can be used to identify (using a dictionary attack) administrative accounts that are in a transitional state. The [tsm_auth_leak.py](tsm_auth_leak.py) tool retrieves authentication messages (for the specified user) needed for an offline password cracking attack. The [tsm_auth_crack.py](tsm_auth_crack.py) tool takes authentication messages and a password file as input and tries to find a valid password.
 
